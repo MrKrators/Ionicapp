@@ -15,6 +15,15 @@ const routes: Routes = [
     path: 'menu',
     loadChildren: () => import('./menu/menu.module').then( m => m.MenuPageModule)
   },
+  {
+    path: 'registrof',
+    loadChildren: () => import('./registrof/registrof.module').then( m => m.RegistrofPageModule)
+  },
+  {
+    path: 'listaf',
+    loadChildren: () => import('./listaf/listaf.module').then( m => m.ListafPageModule)
+  },
+  
 ];
 
 @NgModule({
